@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context="ceg.dji.com.ceg.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/ConnectStatusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drone Project"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="21sp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/locate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Locate Drone"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/connectButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Connect to Pi"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/configMission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Config Mission"
+            android:layout_weight="1"/>
+        <!--android:text="Clear"-->
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/uploadMission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload Mission"
+            android:layout_weight="0.9"/>
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Mission"
+            android:layout_weight="1"/>
+        <!--android:text="Start"-->
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stop Mission"
+            android:layout_weight="1"/>
+        <!--android:text="Stop"-->
+    </LinearLayout>
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.google.android.gms.maps.SupportMapFragment" />
+</LinearLayout>
+
+
